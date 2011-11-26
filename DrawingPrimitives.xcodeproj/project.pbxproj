@@ -17,6 +17,7 @@
 		70D93D3114818A3800661B74 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D93D3014818A3800661B74 /* MainViewController.m */; };
 		70D93D3414818A3800661B74 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D93D3314818A3800661B74 /* FlipsideViewController.m */; };
 		70D93D3B14818D0900661B74 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D93D3A14818D0900661B74 /* QuartzCore.framework */; };
+		70D93D40148190D200661B74 /* PrimitivesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D93D3F148190D200661B74 /* PrimitivesView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		70D93D3214818A3800661B74 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
 		70D93D3314818A3800661B74 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
 		70D93D3A14818D0900661B74 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		70D93D3E148190D200661B74 /* PrimitivesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimitivesView.h; sourceTree = "<group>"; };
+		70D93D3F148190D200661B74 /* PrimitivesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimitivesView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,13 +87,8 @@
 		70D93D2014818A3800661B74 /* DrawingPrimitives */ = {
 			isa = PBXGroup;
 			children = (
-				70D93D2914818A3800661B74 /* AppDelegate.h */,
-				70D93D2A14818A3800661B74 /* AppDelegate.m */,
-				70D93D2C14818A3800661B74 /* MainStoryboard.storyboard */,
-				70D93D2F14818A3800661B74 /* MainViewController.h */,
-				70D93D3014818A3800661B74 /* MainViewController.m */,
-				70D93D3214818A3800661B74 /* FlipsideViewController.h */,
-				70D93D3314818A3800661B74 /* FlipsideViewController.m */,
+				70D93D3D1481900300661B74 /* Drawing Views */,
+				70D93D3C14818FF800661B74 /* View Controllers */,
 				70D93D2114818A3800661B74 /* Supporting Files */,
 			);
 			path = DrawingPrimitives;
@@ -105,6 +103,29 @@
 				70D93D2814818A3800661B74 /* DrawingPrimitives-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70D93D3C14818FF800661B74 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				70D93D2914818A3800661B74 /* AppDelegate.h */,
+				70D93D2A14818A3800661B74 /* AppDelegate.m */,
+				70D93D2C14818A3800661B74 /* MainStoryboard.storyboard */,
+				70D93D2F14818A3800661B74 /* MainViewController.h */,
+				70D93D3014818A3800661B74 /* MainViewController.m */,
+				70D93D3214818A3800661B74 /* FlipsideViewController.h */,
+				70D93D3314818A3800661B74 /* FlipsideViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		70D93D3D1481900300661B74 /* Drawing Views */ = {
+			isa = PBXGroup;
+			children = (
+				70D93D3E148190D200661B74 /* PrimitivesView.h */,
+				70D93D3F148190D200661B74 /* PrimitivesView.m */,
+			);
+			name = "Drawing Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +194,7 @@
 				70D93D2B14818A3800661B74 /* AppDelegate.m in Sources */,
 				70D93D3114818A3800661B74 /* MainViewController.m in Sources */,
 				70D93D3414818A3800661B74 /* FlipsideViewController.m in Sources */,
+				70D93D40148190D200661B74 /* PrimitivesView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
