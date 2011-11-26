@@ -26,8 +26,14 @@
     // save the current state, as we'll overwrite this
     CGContextSaveGState(context);
     
-    // draw stuff
-    
+    /*
+     draw a line across the top of the view
+    */
+    // move the pen to the starting point
+    CGContextMoveToPoint(context, 10, 10);
+    // draw a line to another point
+    CGContextAddLineToPoint(context, 290, 10);
+        
     // do the actual drawing
     CGContextStrokePath(context);
     // restore the state back after drawing on it.
