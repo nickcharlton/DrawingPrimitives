@@ -33,7 +33,12 @@
     CGContextMoveToPoint(context, 10, 10);
     // draw a line to another point
     CGContextAddLineToPoint(context, 290, 10);
-        
+    
+    /*
+     draw a rectangle just below, with a stroke on the outside.
+     */
+    CGContextAddRect(context, CGRectMake(10, 20, 280, 30));
+    
     // do the actual drawing
     CGContextStrokePath(context);
     // restore the state back after drawing on it.
