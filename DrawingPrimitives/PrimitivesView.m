@@ -39,6 +39,19 @@
      */
     CGContextAddRect(context, CGRectMake(10, 20, 280, 30));
     
+    /*
+     write the previous to the context then
+     change the colour to blue and the stroke to 2px.
+    */
+    CGContextStrokePath(context);
+    CGContextSetRGBStrokeColor(context, 0, 0, 1, 1);
+    CGContextSetLineWidth(context, 2);
+    
+    /*
+     draw a circle filling most of the rest of the box.
+    */
+    CGContextAddEllipseInRect(context, CGRectMake(50, 70, 200, 200));
+    
     // do the actual drawing
     CGContextStrokePath(context);
     // restore the state back after drawing on it.
